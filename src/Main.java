@@ -47,9 +47,9 @@ public class Main {
 
         }
 
-
-
         //以降にテストコードを追加して検証を行う
-        system.out.println(user.getHand().getHandName());
+        com.createRandomHand();
+
+        System.out.println(com.getHand().getHandName());
     }
 }
