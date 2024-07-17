@@ -9,8 +9,13 @@ package src;
          　　　　1 : 自身が引数で指定した手より強い
          */
         public int compare(Hand hand) {
-            //TODO:例外の処理
-            return 0; //TODO 仮の返り値
+            if(hand instanceof Choki) {    //チョキ　vs グー（自分）
+                return 1;
+            } else if(hand instanceof Pa) {    //パー　vs グー（自分）
+                return -1;
+            } else {
+                return 0;    //グー　vs グー（自分）
+            }
         }
         public String getHandName() {
             return this.HAND_NAME;

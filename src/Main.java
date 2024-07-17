@@ -50,6 +50,9 @@ public class Main {
         //以降にテストコードを追加して検証を行う
         com.createRandomHand();
 
-        System.out.println(com.getHand().getHandName());
+//        System.out.println(com.getHand().getHandName());
+
+//    int result = game.judge(user,com);
+
     }
 }
